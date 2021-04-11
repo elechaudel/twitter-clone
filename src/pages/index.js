@@ -88,11 +88,11 @@ async function handleOnSubmit(data, e) {
 }
 
 export async function getStaticProps() {
-  // const posts = await getAllPosts();
+  const posts = await getAllPosts();
 
   return {
     props: {
-      posts: []
+      posts
     }
   }
 }
