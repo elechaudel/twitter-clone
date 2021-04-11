@@ -87,7 +87,7 @@ async function handleOnSubmit(data, e) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const posts = await getAllPosts();
 
   return {
